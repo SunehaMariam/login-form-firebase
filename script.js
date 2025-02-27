@@ -24,9 +24,9 @@ document.getElementById("signup-form").addEventListener("submit", (e) => {
     let email = document.getElementById("signup-email").value;
 
     let password = document.getElementById("signup-password").value;
-    let num = document.getElementById("signup-number").value;
+  
     // Create user with email and password add names of variables in it
-    createUserWithEmailAndPassword(auth, email, password , num)
+    createUserWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
             console.log("User signed up:", userCredential.user);
             alert("Signup successful!");
